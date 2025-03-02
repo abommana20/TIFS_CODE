@@ -2,7 +2,7 @@
 
 # Power Trace and Accuracy Evaluation Framework
 
-This repository contains multiple modules that collectively enable power trace generation, sensitivity analysis, and inference accuracy evaluation under adversarial conditions. Each module (except **Hotspot**) includes its own README file with detailed setup instructions, implementation details, and explanations of the files contained within.
+This repository contains multiple modules that collectively enable power trace generation, sensitivity analysis, and inference accuracy evaluation under adversarial conditions. Each module includes its own README file with detailed setup instructions, implementation details, and explanations of the files contained within.
 
 ## Repository Structure
 
@@ -11,7 +11,7 @@ This repository contains multiple modules that collectively enable power trace g
    - **Details:** For installation and usage instructions, please refer to the README within the directory.
 
 2. **Hessian Sensitivity**
-   - **Purpose:** Calculates the Hessian scores at each tile and crossbar level.
+   - **Purpose:** Calculates the Hessian scores at each crossbar level.
    - **Details:** Detailed setup and implementation guidelines are provided in the directory’s README file.
 
 3. **Hotspot**
@@ -26,10 +26,30 @@ This repository contains multiple modules that collectively enable power trace g
 
 To begin working with this project:
 - Review the README files in each module (except **Hotspot**) for specific setup instructions.
-- Ensure all dependencies and configurations are properly installed as detailed in the individual READMEs.
+
+## Experiments Workflow
+
+1. **Model Training**  
+   First, train the models as per your experimental requirements.
+
+2. **Hessian Score Generation**  
+   Generate the Hessian scores by navigating to the **Hessian Sensitivity** directory and following the provided instructions.
+
+3. **Power Trace Experiments**  
+   Proceed to the **Power_trace_gen** directory and run the experiments as detailed in its README file.
+
+4. **Accuracy and Energy Evaluation**  
+   Validate the effectiveness of the proposed countermeasure by running the experiments in the **Topk_inference** directory. For further details, please refer to the README within that directory.  
+   *Note:* A prerequisite to energy evaluations is the extraction of the latency of each layer from NeuroSim (use latest branch).
+
+
+## Dependecies 
+- Pytorch 
+- Numpy
+- matplotlib
 
 ## References
-
+Please cite the following works along with our paper if use you any part of the code published here. In developing our code we used/adopted part of the code published in the following works. 
 ```bibtex
 @inproceedings{He_Lin_Ewetz_Yuan_Fan_2019,
   address={New York, NY, USA},
@@ -52,3 +72,27 @@ To begin working with this project:
   number={5},
   pages={501-513}
 }
+
+@article{adahessian, 
+title={ADAHESSIAN: An Adaptive Second Order Optimizer for Machine Learning},
+ journal={Proc. AAAI Conf. Artificial Intelligence}, 
+ author={Yao, Zhewei and Gholami, Amir and Shen, Sheng and Mustafa, Mustafa and Keutzer, Kurt and Mahoney, Michael}, 
+ year={2021} 
+}
+
+@inproceedings{yao2020pyhessian,
+  title={Pyhessian: Neural networks through the lens of the hessian},
+  author={Yao, Zhewei and Gholami, Amir and Keutzer, Kurt and Mahoney, Michael W},
+  booktitle={IEEE International Conference on Big Data},
+  pages={581--590},
+  year={2020},
+  organization={IEEE}
+}
+
+@INPROCEEDINGS{neurosim,
+  author={Peng, Xiaochen and Huang, Shanshi and Luo, Yandong and Sun, Xiaoyu and Yu, Shimeng},
+  booktitle={IEEE International Electron Devices Meeting (IEDM)}, 
+  title={DNN+NeuroSim: An End-to-End Benchmarking Framework for Compute-in-Memory Accelerators with Versatile Device Technologies}, 
+  year={2019},
+  pages={32.5.1-32.5.4}
+  }
