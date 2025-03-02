@@ -30,7 +30,7 @@ To begin working with this project:
 ## Experiments Workflow
 
 1. **Model Training**  
-   First, train the models as per your experimental requirements.
+   First, train the models as per your experimental requirements. *Copy all trained models directory to topk_inference power_trace_gen hessian_sensitivity*
 
 2. **Hessian Score Generation**  
    Generate the Hessian scores by navigating to the **Hessian Sensitivity** directory and following the provided instructions.
