@@ -1,0 +1,7 @@
+attacker
+RUNNING HOTSPOT with grid 16 x 16 
+Parsing input files...
+Creating thermal circuit...
+num layers 4
+num units 210
+Simulation complete.
