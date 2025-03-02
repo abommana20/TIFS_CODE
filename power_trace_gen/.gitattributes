@@ -1,0 +1,2 @@
+trace_data/weights_resnet18_cifar10.pt filter=lfs diff=lfs merge=lfs -text
+trace_data/weights_vgg16_cifar10.pt filter=lfs diff=lfs merge=lfs -text
