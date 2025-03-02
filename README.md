@@ -27,3 +27,28 @@ This repository contains multiple modules that collectively enable power trace g
 To begin working with this project:
 - Review the README files in each module (except **Hotspot**) for specific setup instructions.
 - Ensure all dependencies and configurations are properly installed as detailed in the individual READMEs.
+
+## References
+
+```bibtex
+@inproceedings{He_Lin_Ewetz_Yuan_Fan_2019,
+  address={New York, NY, USA},
+  series={DAC ’19},
+  title={Noise Injection Adaption: End-to-End ReRAM Crossbar Non-ideal Effect Adaption for Neural Network Mapping},
+  ISBN={978-1-4503-6725-7},
+  author={He, Zhezhi and Lin, Jie and Ewetz, Rickard and Yuan, Jiann-Shiun and Fan, Deliang},
+  year={2019},
+  month=jun,
+  pages={1–6},
+  collection={DAC ’19}
+}
+
+@ARTICLE{hotspot,
+  author={Wei Huang and Ghosh, S. and Velusamy, S. and Sankaranarayanan, K. and Skadron, K. and Stan, M.R.},
+  journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems},
+  title={HotSpot: A Compact Thermal Modeling Methodology for Early-Stage VLSI Design},
+  year={2006},
+  volume={14},
+  number={5},
+  pages={501-513}
+}
