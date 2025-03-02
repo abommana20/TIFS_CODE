@@ -88,7 +88,7 @@ def extract_tile_values(filename):
     
     return tile_values
 
-model_names = ['resnet18', 'vgg16', 'densenet121', 'densenet40', 'alexnet', 'lenet', 'vgg8']
+model_names = ['resnet18', 'densenet40',  'vgg8']
 dataset_name = 'cifar10'
 save_path = "./trace_data"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -237,7 +237,7 @@ for mode in ['attacker', 'normal']:
             for config in configs:
                 print(f'Running accuracy evaluation for {attack_name} attack on {model_name} model with {config} config in {mode} mode')
                 command = [
-                    'python', 'main_temp.py',
+                    'python', 'main_acc.py',
                     '--model', model_name,
                     '--batch_size', '128',
                     '--trained_model_path', 'trained_models',

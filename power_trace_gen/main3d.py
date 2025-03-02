@@ -220,7 +220,7 @@ for model_name in model_names:
                 for flp_config in flp_configs:
                     print(f'Running accuracy evaluation for {attack_name} attack on {model_name} model with {tile} tileconfig and {flp_config} flp config in {mode} mode')
                     command = [
-                        'python', 'main_temp.py',
+                        'python', 'main_acc.py',
                         '--model', model_name,
                         '--batch_size', '128',
                         '--trained_model_path', 'trained_models',

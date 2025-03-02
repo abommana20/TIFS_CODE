@@ -89,7 +89,7 @@ def extract_tile_values(filename):
     
     return tile_values
 
-model_names = ['vgg16']
+model_names = ['vgg8']
 dataset_name = 'cifar10'
 save_path = "./trace_data"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

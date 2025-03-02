@@ -207,7 +207,7 @@ for mode in ['attacker']:
             for config in configs:
                 print(f'Running accuracy evaluation for {attack_name} attack on {model_name} model with {config} config in {mode} mode')
                 command = [
-                    'python', 'main_temp.py',
+                    'python', 'main_acc.py',
                     '--model', model_name,
                     '--batch_size', '1024',
                     '--trained_model_path', 'trained_models',
