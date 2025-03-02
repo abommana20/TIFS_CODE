@@ -1,0 +1,10 @@
+usage: grid_thermal_map.pl <flp_file> <grid_steady_file> > <filename>.svg (or)
+       grid_thermal_map.pl <flp_file> <grid_steady_file> <rows> <cols> > <filename>.svg
+       grid_thermal_map.pl <flp_file> <grid_steady_file> <rows> <cols> <min> <max> > <filename>.svg
+prints an 'SVG' format visual thermal map to stdout
+<flp_file>         -- path to the file containing the floorplan (eg: ev6.flp)
+<grid_steady_file> -- path to the grid temperatures file (eg: sample.grid.steady)
+<rows>             -- no. of rows in the grid (default 64)
+<cols>             -- no. of columns in the grid (default 64)
+<min>              -- min. temperature of the scale (defaults to min. from <grid_temp_file>)
+<max>              -- max. temperature of the scale (defaults to max. from <grid_temp_file>)
