@@ -1,2 +1,12 @@
 # Description
-HotSpot is a pre-RTL thermal simulator intended for use early in the design process. HotSpot supports simulation of traditional 2D Integrated Circuits (2D ICs) and [3D ICs](https://en.wikipedia.org/wiki/Three-dimensional_integrated_circuit) as well as  [microfluidic cooling](https://en.wikipedia.org/wiki/Microfluidics). If this is your first time seeing HotSpot, check out our [Getting Started](https://github.com/uvahotspot/HotSpot/wiki/Getting-Started) page. To see HotSpot in action, check out our simulation examples in the `examples` directory! Please send questions, comments, concerns, bugs, etc. to hotspot@virginia.edu.
+
+This repository includes additional directories for this work:
+
+1. **security**  
+2. **security_3d_w_tim** (with TIM layer)  
+3. **security_3d_wout_tim** (without TIM layer)
+
+For our experiments, we considered only the **security** and **security_3d_wout_tim** directories.
+
+> **Note:**  
+> No experiments are run in these directories. The Hotspot functionality is invoked exclusively in the `power_trace_gen` experiments.
